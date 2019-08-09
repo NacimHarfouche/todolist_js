@@ -1,0 +1,46 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background: url("../img/typewriter.jpg") center fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    place-content: center center;
+}
+
+/* Main */
+main {
+    margin: 19% 19% auto;
+    background-color: white;
+    width: 40%;
+    height: 20rem;
+    text-align: center;
+}
+main textarea {
+    width: 98%;
+    border: none;
+    border-bottom: solid 1px gray;
+}
+main button {
+    margin-top: 2px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+    padding: 0.3rem;
+}
+main button:active {
+    background-color: rgb(161, 209, 123);
+    box-shadow: none;
+}
+.deleteButton {
+    background-color: white;
+    border: none;
+    box-shadow: none;
+}
