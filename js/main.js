@@ -37,7 +37,6 @@ addButtonElt.addEventListener("click", () => {
 // it delete the li parent of it
 setInterval( () => {
     const deleteButtonElems = document.querySelectorAll("button.deleteButton");
-    console.log(typeof deleteButtonElems)
     for (let button of deleteButtonElems) {
         button.addEventListener("click", function() {
            this.parentNode.remove();
