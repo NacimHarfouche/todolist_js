@@ -47,3 +47,10 @@ main button:active {
 ul li:hover {
     background-color: lightgrey;
 }
+
+@media all and (max-width: 767px) {
+    main {
+        margin-top: 60%;
+        width: 65%;
+    }
+}
