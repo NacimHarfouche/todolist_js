@@ -1,3 +1,6 @@
+/* Font */
+
+
 /* Global */
 * {
     box-sizing: border-box;
@@ -22,6 +25,7 @@ main {
     width: 40%;
     height: 20rem;
     text-align: center;
+    overflow: auto;
 }
 main textarea {
     width: 98%;
@@ -35,17 +39,48 @@ main button {
     box-shadow: 1px 1px 1px black;
     padding: 0.3rem;
 }
-main button:active {
+#addButton:hover {
+    background-color: #e5ffe5;
+}
+#addButton:active {
     background-color: rgb(161, 209, 123);
     box-shadow: none;
 }
+#clearAllButton {
+    margin-left: 0.3rem;
+}
+#clearAllButton:hover {
+    background-color: #ffe5e5;
+}
+#clearAllButton:active {
+    background-color: rgb(209, 123, 123);
+    box-shadow: none;
+}
+main ul {
+    width: 100%;
+    padding: 0;
+}
+ul li {
+    width: 100%;
+    padding: 0;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: decimal;
+}
 .deleteButton {
     background-color: white;
-    border: none;
+    padding: 0.2rem 0.5rem;
+}
+.deleteButton:hover {
+    background-color: #ffe5e5;
+}
+.deleteButton:active {
+    background-color: rgb(209, 123, 123);
     box-shadow: none;
 }
 ul li:hover {
     background-color: lightgrey;
+    text-decoration: line-through #FF3028;
 }
 
 @media all and (max-width: 767px) {
