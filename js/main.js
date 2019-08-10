@@ -1,13 +1,14 @@
 // declare the variable that a will use
 const entryElt = document.getElementById("entryWrite"),
-buttonElt = document.getElementById("button"),
-listElt = document.getElementById("list");
+addButtonElt = document.getElementById("addButton"),
+listElt = document.getElementById("list"),
+clearAllButtonElt = document.getElementById("clearAllButton");
 
 // create a counter
 let count = 1;
 
-// when i click on the button
-buttonElt.addEventListener("click", () => {
+// when i click on the ADD button
+addButtonElt.addEventListener("click", () => {
     // create a li element and set attributes
     let li = document.createElement("li");
     //li.id = `myId${count}`;
@@ -36,11 +37,6 @@ buttonElt.addEventListener("click", () => {
     count++;
 });
 
-// function deleteElemLi(elemId) {
-//     const theDeleteLi = document.querySelector(`ul li#myId${elemId}`);
-//     console.log(theDeleteLi);
-// }
-
 setInterval( () => {
     const deleteButtonElems = document.querySelectorAll("button.deleteButton");
     for (let button of deleteButtonElems) {
@@ -49,3 +45,8 @@ setInterval( () => {
         })
     }
 }, 1000);
+
+// When i click on the Clear All button
+clearAllButtonElt.addEventListener("click", () => {
+    listElt.innerHTML = "";
+})
